@@ -71,6 +71,7 @@ router.post("/cancelbooking",async(req,res)=>{
     res.send('Your booking cancelled successfully')
     
   } catch (error) {
+    
     return res.status(400).json({error});
     
   }
