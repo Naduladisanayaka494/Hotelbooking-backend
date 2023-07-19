@@ -3,6 +3,7 @@ const  router= express.Router();
 const Booking= require('../models/booking');
 const Room= require('../models/room');
 
+
 router.post("/bookroom",async (req,res)=>{
     const{
         room,
@@ -71,7 +72,7 @@ router.post("/cancelbooking",async(req,res)=>{
     res.send('Your booking cancelled successfully')
     
   } catch (error) {
-    
+
     return res.status(400).json({error});
     
   }
